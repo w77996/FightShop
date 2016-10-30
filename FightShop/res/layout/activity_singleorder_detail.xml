@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.14"
+            android:layout_height="55dp">
+            <TextView
+                android:id="@+id/sale_date"
+                android:layout_height="65dp"
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="2016/10/27"
+                android:gravity="center|center_vertical"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/back_home"
+                android:text="回主页"
+                android:textSize="20dp"
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:paddingRight="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            android:layout_weight="0.01"/>
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            android:layout_weight="0.01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_height="55dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:text="名称"
+                android:textSize="25sp"
+                android:gravity="center"/>
+            <View
+                android:layout_height="30dp"
+                android:layout_width="2dp"
+                android:background="#f0f0f0"
+                android:layout_gravity="center"
+                android:layout_weight="0.01"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:text="数量"
+                android:textSize="25sp"
+                android:gravity="center"/>
+            <View
+                android:layout_height="30dp"
+                android:layout_width="2dp"
+                android:background="#f0f0f0"
+                android:layout_gravity="center"
+                android:layout_weight="0.01"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.59"
+                android:text="单价"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/button_update"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:text="修改"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="#f0f0f0"
+            android:layout_gravity="center"
+            android:layout_weight="0.01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/lv_third_list"
+                android:layout_weight="1.32"/>
+        </LinearLayout>
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            android:layout_weight="0.01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="共计：10件商品"
+                android:paddingRight="10dp"
+                android:textSize="25sp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#CC3333"
+                android:textColor="#FFFFFF"
+                android:text="  总 金 额 : 100元"
+                android:textSize="25sp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"/>
+            <Button
+                android:id="@+id/button_ba"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="返回"
+                android:textSize="25sp"/>
+    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

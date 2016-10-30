@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/shape_firstfragment_today_linearlayout"
+     android:gravity="center_vertical"
+     android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_height="65dp"
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:text="进货入库"
+                android:gravity="top|center"
+                android:textSize="30dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+              android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:id="@+id/tv_third_store_people"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="进货人："
+                android:textSize="20sp"
+                />
+            <Spinner
+                android:id="@+id/sp_third_store_people"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+           />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_third_store_addpeople"
+                android:layout_weight="3"
+                android:text="添加"
+                android:textSize="20sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/store_text"
+                 android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                android:layout_weight="1"
+             
+                android:text="进货时间："
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_third_store_date"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:text="2016/10/28"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:id="@+id/store_provider"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="供货商："
+                android:textSize="20sp"
+                />
+            <Spinner
+                android:id="@+id/sp_third_store_providerinfo"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_gravity="center"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/info_add"
+                android:layout_weight="3"
+                android:text="添加"
+                android:textSize="20sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/store_yes"
+                android:layout_weight="1"
+                android:text="确认"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/store_no"
+                android:text="取消"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

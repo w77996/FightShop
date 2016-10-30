@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_firt_today"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_firstfragment_today_linearlayout"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+             >
+            <TextView
+                android:id="@+id/tv_frist_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+				android:layout_alignParentLeft="true"
+				    android:layout_centerVertical="true"
+                android:text="2016.10.30"
+                android:textSize="30sp" />
+              <Button
+                android:id="@+id/bt_frist_record"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/_10"
+              />         
+        </RelativeLayout>
+
+      <View
+            android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_weight="0.01"
+            android:background="#66CCFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:id="@+id/tv_frist_soldnum"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="卖出总笔数：3"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_frist_totalprice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="总金额：2000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_frist_totalprofits"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="总利润：200"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="10dp"
+        android:background="#66CCFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_firstfragment_today_linearlayout"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_frist_goodslist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+				android:layout_alignParentLeft="true"
+				    android:layout_centerVertical="true"
+                android:text="库存"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/bt_frist_goodslist"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/_10"
+               />
+        </RelativeLayout>
+
+      <View
+            android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_weight="0.01"
+            android:background="#66CCFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_frist_goodslist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

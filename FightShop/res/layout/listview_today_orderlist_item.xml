@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:text="10.27"
+        android:textSize="22sp"
+        android:gravity="center_vertical"/>
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#66CCFF"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_detail__detail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="可乐：3， 雪碧：5， 可爱多：3, 薯片：5， 水：10， 可爱多：3， 可爱多：3， 可爱多：3"
+            android:textSize="20sp"
+            android:lines="1"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/tv_detail_price"
+            android:layout_width="match_parent"
+            android:text="金额：15"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+</LinearLayout>
